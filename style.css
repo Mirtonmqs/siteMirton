@@ -4,18 +4,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 body {
-  background-color: #fff;
+  background-color: #f9f9f9;
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 160px;
 }
 
 .interface {
-  max-width: 1980px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -28,11 +26,11 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-  padding: 0px; /* Ajuste o padding conforme necessário */
+  padding: 0;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #FFF0E9;
+  background-color: #333;
   z-index: 1000; 
 }
 
@@ -44,7 +42,7 @@ header {
 header .interface {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adiciona espaço entre a logo/menu e o botão */
+  justify-content: space-between; 
 }
 
 .menu-desktop ul {
@@ -53,21 +51,23 @@ header .interface {
   padding: 0;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .menu-desktop ul li {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .menu-desktop ul li a {
   text-decoration: none;
-  padding: 1px;
-  color: #7d7d7d;
+  padding: 30px;
+  color: #fff;
   transition: 0.2s;
+  font-size: 20px;
 }
 
 .menu-desktop ul li a:hover {
-  color: burlywood;
+  color: #009FE0;
   transform: scale(1.05);
 }
 
@@ -76,27 +76,63 @@ header .interface {
   margin-left: 10px; 
 }
 
-.btn-agende {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  color: antiquewhite;
-  background-color: darksalmon;
+.fale-conosco {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #009FE0;
   border: 0;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.btn-agende:hover {
+.fale-conosco:hover {
   transform: scale(1.1); 
 }
 
-.btn-agende img {
+.fale-conosco img {
   margin-left: 10px;
   height: auto;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+/* Estilo do topo do site */
+section.topo-do-site {
+  padding: 60px 4%; /* Ajustei o padding para diminuir o espaço superior */
+  background: linear-gradient(to right, #0066cc, #003399);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.topo-do-site .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.topo-do-site .txt-topo-site {
+  flex: 1;
+  max-width: 100%;
+}
+
+section.topo-do-site .txt-topo-site h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+section.topo-do-site .txt-topo-site p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section.topo-do-site .txt-topo-site p strong {
+  font-weight: bold;
 }
