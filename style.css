@@ -60,7 +60,7 @@ header .interface {
 
 .menu-desktop ul li a {
   text-decoration: none;
-  padding: 30px;
+  padding: 60px;
   color: #fff;
   transition: 0.2s;
   font-size: 20px;
@@ -69,11 +69,6 @@ header .interface {
 .menu-desktop ul li a:hover {
   color: #009FE0;
   transform: scale(1.05);
-}
-
-.social-icon {
-  width: 20px;
-  margin-left: 10px; 
 }
 
 .fale-conosco {
@@ -128,7 +123,7 @@ section.topo-do-site .txt-topo-site h1 {
 }
 
 section.topo-do-site .txt-topo-site p {
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
